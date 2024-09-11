@@ -1,0 +1,12 @@
+---
+services:
+  buildroot:
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+      target: buildroot
+    volumes:
+      - ./buildroot:/buildroot
+      - ./output:/buildroot/output
+      - ./hcfw:/hcfw
