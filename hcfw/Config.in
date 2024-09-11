@@ -1,0 +1,8 @@
+menu "Home-Cooked Firmware"
+
+  menu "Hardware Support"
+    comment "GPU"
+    source "$BR2_EXTERNAL_HCFW_PATH/package/hw/gpu/mali-g31-fbdev/Config.in"
+  endmenu
+
+endmenu
