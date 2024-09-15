@@ -3,9 +3,15 @@ services:
   buildroot:
     stdin_open: true
     tty: true
+    env_file:
+      - path: .env
+        required: false
     build:
       context: .
       target: buildroot
+      args:
+        - "UID=${UID:-1000}"
+        - "GID=${GID:-1000}"
     volumes:
       - ./buildroot:/buildroot
       - ./hcfw:/hcfw
