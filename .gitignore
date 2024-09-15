@@ -1,2 +1,5 @@
 # Buildroot output
 output/
+
+# .env
+.env
