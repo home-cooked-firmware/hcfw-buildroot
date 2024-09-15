@@ -42,7 +42,6 @@ RUN apt-get update \
   && apt-get clean
 
 VOLUME /buildroot
-VOLUME /buildroot/output
 VOLUME /hcfw
 
 WORKDIR /buildroot

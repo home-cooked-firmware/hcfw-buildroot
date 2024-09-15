@@ -8,5 +8,4 @@ services:
       target: buildroot
     volumes:
       - ./buildroot:/buildroot
-      - ./output:/buildroot/output
       - ./hcfw:/hcfw
