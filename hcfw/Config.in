@@ -5,4 +5,8 @@ menu "Home-Cooked Firmware"
     source "$BR2_EXTERNAL_HCFW_PATH/package/hw/gpu/mali-g31-fbdev/Config.in"
   endmenu
 
+  menu "Runtimes"
+    source "$BR2_EXTERNAL_HCFW_PATH/package/runtimes/wasm3/Config.in"
+  endmenu
+
 endmenu

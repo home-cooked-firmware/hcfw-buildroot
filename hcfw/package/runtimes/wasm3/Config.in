@@ -1,0 +1,7 @@
+config BR2_PACKAGE_WASM3
+	bool "wasm3"
+
+	help
+		Fast web assembly runtime and interpreter.
+
+		https://github.com/wasm3/wasm3
