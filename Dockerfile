@@ -35,7 +35,11 @@ RUN apt-get update \
   git \
   graphviz \
   gzip \
+  libcurl4-openssl-dev \
+  libffi-dev \
   libncurses-dev \
+  libsqlite3-dev \
+  libuv1-dev \
   patch \
   perl \
   python2 \
