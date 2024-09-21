@@ -1,0 +1,5 @@
+config BR2_PACKAGE_TXIKI_JS
+	bool "txiki-js"
+
+	help
+		JavaScript runtime for embedded devices.

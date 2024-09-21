@@ -1,0 +1,5 @@
+config BR2_PACKAGE_LVGLJS
+	bool "lvgljs"
+
+	help
+		LVGL JavaScript runtime based on Txiki.js

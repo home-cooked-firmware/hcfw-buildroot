@@ -6,6 +6,9 @@ menu "Home-Cooked Firmware"
   endmenu
 
   menu "Runtimes"
+    source "$BR2_EXTERNAL_HCFW_PATH/package/runtimes/lvgljs/Config.in"
+    source "$BR2_EXTERNAL_HCFW_PATH/package/runtimes/quickjs_ng/Config.in"
+    source "$BR2_EXTERNAL_HCFW_PATH/package/runtimes/txiki_js/Config.in"
     source "$BR2_EXTERNAL_HCFW_PATH/package/runtimes/wasm3/Config.in"
   endmenu
 
