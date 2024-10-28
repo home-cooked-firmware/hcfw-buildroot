@@ -55,11 +55,6 @@
 #endif
 #define EGLAPIENTRYP EGLAPIENTRY*
 
-/*
- * X11 is not available in HCFW environments.
- */
-#define EGL_NO_X11
-
 #if defined(MESA_EGL_NO_X11_HEADERS) && !defined(EGL_NO_X11)
 #warning "`MESA_EGL_NO_X11_HEADERS` is deprecated, and doesn't work with the unmodified Khronos header"
 #warning "Please use `EGL_NO_X11` instead, as `MESA_EGL_NO_X11_HEADERS` will be removed soon"
@@ -127,10 +122,6 @@ typedef intptr_t EGLNativeDisplayType;
 typedef intptr_t EGLNativePixmapType;
 typedef intptr_t EGLNativeWindowType;
 
-/*
- * `EGL_NO_X11` should always be defined for HCFW devices, because HCFW
- * does not include/support X11.
- */
 #elif defined(__unix__) && defined(EGL_NO_X11)
 typedef void             *EGLNativeDisplayType;
 typedef khronos_uintptr_t EGLNativePixmapType;
