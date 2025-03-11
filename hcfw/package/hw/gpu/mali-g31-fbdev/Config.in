@@ -16,5 +16,3 @@ config BR2_PACKAGE_PROVIDES_LIBGLES
 	default "mali-g31-fbdev"
 
 endif
-
-comment "mali-g31-fbdev"
